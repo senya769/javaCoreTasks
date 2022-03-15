@@ -1,12 +1,42 @@
 package arseniyusik.lesson3;
 
+import com.sun.jdi.Value;
+
 public class TaskOne {
     public static void main(String[] args) {
-
-        int Number = 123;
-        while(Number != 0 )
+        String ValueType;
+        int number = 1233;
+        if (number >= 0)
         {
-            
+            ValueType =  "Это число "+number + " положительное";
         }
+        else {
+            ValueType ="Это число " + number + " отрицательное";
+        }
+        int count = 0;
+        for(int i = number; i!= 0;)
+        {
+        i /= 10;
+        count++;
+        }
+        switch(count)
+        {
+            case 1:{
+                ValueType += " и оно однозначное.";
+                break;
+            }
+            case 2:{
+                ValueType += " и оно двухзначное.";
+                break;
+            }
+            case 3:{
+                ValueType += " и оно трехзначное.";
+                break; }
+
+            default:
+                ValueType += " и оно многозначное.";
+        }
+        System.out.println(ValueType);
+
     }
 }
