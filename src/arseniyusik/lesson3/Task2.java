@@ -5,5 +5,12 @@ public class Task2 {
         int a = 10;
         int b = 10;
         int c = 10;
+        if((a + b) > c && (a + b)> c && (b+c) > a)
+        {
+            System.out.println("Triangle is exist");
+        }
+        else{
+            System.out.println("Triangle is not exist");
+        }
     }
 }
