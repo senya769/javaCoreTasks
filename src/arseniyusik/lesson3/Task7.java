@@ -7,9 +7,10 @@ public class Task7 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите количество людей:" );
         int amountOfHuman = scan.nextInt();
+        int amountEnd = amountOfHuman % 10;
         String profession = "программист";
-        if (amountOfHuman > 0 && amountOfHuman < 5) profession += "а";
-        else if (amountOfHuman >= 5 || amountOfHuman == 0) profession += "ов";
+        if (amountEnd> 0 && amountEnd  < 5) profession += "а";
+        else if (amountEnd >= 5 || amountEnd == 0) profession += "ов";
         else  if (amountOfHuman < 0) {System.out.println("Ошибка! Введите положительное число!"); return;}
         System.out.println(amountOfHuman + " " + profession);
     }
