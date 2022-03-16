@@ -1,6 +1,6 @@
 package arseniyusik.lesson3;
 
-public class TaskOne {
+public class Task1 {
     public static void main(String[] args) {
         String ValueType;
         int number = 1233;
