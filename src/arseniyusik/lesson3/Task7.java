@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task7 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Введите количество людей:" );
+        System.out.print("Введите количество людей :" );
         int amountOfHuman = scan.nextInt();
         String profession = "программист";
         if (amountOfHuman> 0 && amountOfHuman  < 5) profession += "а";
