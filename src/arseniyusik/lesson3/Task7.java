@@ -12,5 +12,6 @@ public class Task7 {
         else if (amountOfHuman >= 5 || amountOfHuman == 0) profession += "ов";
         else  if (amountOfHuman < 0) {System.out.println("Ошибка! Введите положительное число!"); return;}
         System.out.println(amountOfHuman + " " + profession);
+        System.out.println("new");
     }
 }
