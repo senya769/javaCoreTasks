@@ -1,16 +1,20 @@
 package arseniyusik.lesson3;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Task6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the first number: ");
-        int valueOne = scan.nextInt();
-        System.out.println("Enter the second number: ");
-        int valueTwo = scan.nextInt();
+        Random rand = new Random();
+        System.out.println("Введите первое число диапозона ");
+        int first = scan.nextInt();
+        System.out.println("Введите второе число диапозона ");
+        int second = scan.nextInt();
+        int valueOne = rand.nextInt(second - first + 1) + first;
+        int valueTwo = rand.nextInt(second - first + 1) + first;
         if(valueOne > valueTwo) System.out.println("higher number: "+ valueOne);
-        else if (valueOne < valueTwo) System.out.println("higher number: "+ valueOne);
+        else if (valueOne < valueTwo) System.out.println("higher number: "+ valueTwo);
         else System.out.println("the numbers are equal");
     }
 }
