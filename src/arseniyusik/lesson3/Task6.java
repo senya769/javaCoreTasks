@@ -13,8 +13,8 @@ public class Task6 {
         int second = scan.nextInt();
         int valueOne = rand.nextInt(second - first + 1) + first;
         int valueTwo = rand.nextInt(second - first + 1) + first;
-        if(valueOne > valueTwo) System.out.println("higher number: "+ valueOne);
-        else if (valueOne < valueTwo) System.out.println("higher number: "+ valueTwo);
-        else System.out.println("the numbers are equal");
+        if(valueOne > valueTwo) System.out.println("Большее число: "+ valueOne);
+        else if (valueOne < valueTwo) System.out.println("Большее число: "+ valueTwo);
+        else System.out.println("Числа одинаковы");
     }
 }
