@@ -1,6 +1,6 @@
 package arseniyusik.lesson4;
 
-public class Tusk2 {
+public class Task2 {
     public static void main(String[] args) {
         int amountAmoeba = 1;
         int hours = 3;
