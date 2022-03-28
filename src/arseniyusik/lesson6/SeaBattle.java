@@ -22,22 +22,23 @@ public class SeaBattle {
 
         int randomShipPosition = rand.nextInt(2);
         int temp = 0;
+        int size = 4;
         switch (randomShipPosition) {
             case 0:  // горизонтальное положение
-                while (temp < 4) {
-                    if (col_id > 6) {
+                while (temp < size) {
+                    if (col_id > 10 - size) {
                         for (int j = col_id; j < 10; j++) {
                             place[row_id][j] = 'X';
                             temp++;
                         }
                     } else {
-                        for (int j = col_id; j < col_id + 4; j++) {
+                        for (int j = 0; j < size; j++) {
                             place[row_id][j] = 'X';
                             temp++;
                         }
                     }
                     if (temp < 4) {
-                        for (int i = 0; i < 4 - temp; i++) {
+                        for (int i = 0; i < size - temp; i++) {
                             place[row_id][col_id - (4 - temp) + i] = 'X';
                         }
                         temp++;
