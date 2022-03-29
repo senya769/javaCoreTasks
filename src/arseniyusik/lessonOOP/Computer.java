@@ -9,6 +9,7 @@ public class Computer {
     private int HDD;
     private int resource;
     private boolean status = false;
+    private int count = 0;
 
 Computer(){}
 Computer(int resource){
@@ -36,7 +37,6 @@ public Computer(String CPU, int RAM, int HDD, int resource) {
         int randNumber = new Random().nextInt(2);
         System.out.println("Введите число 0 или 1, чтобы включить ПК");
         int inputNumber = new Scanner(System.in).nextInt();
-        int count = 0;
         if(randNumber == inputNumber && count <= resource && !status){
             System.out.println("Ваш Компьютер включен!");
         }
@@ -44,6 +44,20 @@ public Computer(String CPU, int RAM, int HDD, int resource) {
             this.status = true;
             System.out.println("Ошибка! Ваш Компьютер сгорел!");
         }
+        this.count++;
+    }
+    public void turnOfComputer(){
+        int randNumber = new Random().nextInt(2);
+        System.out.println("Введите число 0 или 1, чтобы выключить ПК");
+        int inputNumber = new Scanner(System.in).nextInt();
+        if(randNumber == inputNumber && count <= resource && !status){
+            System.out.println("Ваш Компьютер выключен!");
+        }
+        else{
+            this.status = true;
+            System.out.println("Ошибка! Ваш Компьютер сгорел!");
+        }
+        this.count++;
     }
 
 }

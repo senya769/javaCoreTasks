@@ -35,6 +35,8 @@ public class Main {
                 Computer asus = new Computer("Intel Core i5", 8, 512, 3);
                 asus.launchComputer();
                 System.out.println(asus.showInfo());
+                asus.turnOfComputer();
+                System.out.println(asus.showInfo());
                 break;
             case 5:
                 Reader[] array = new Reader[3];
