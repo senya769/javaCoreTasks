@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP;
+package arseniyusik.lessonOOP.Phone;
 
 public class Phone {
     private int number;

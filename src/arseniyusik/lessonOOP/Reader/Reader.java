@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP;
+package arseniyusik.lessonOOP.Reader;
 
 public class Reader {
     private String fullName;
@@ -28,7 +28,7 @@ public class Reader {
         }
         System.out.println();
     }
-    public void takeBook(Book ...books){
+    public void takeBook(Book...books){
         //System.out.print(this.fullName + " взял книги: ");
         takeBook(books.length);
         for (Book j : books){
@@ -47,7 +47,7 @@ public class Reader {
         }
         System.out.println();
     }
-    public void returnBook(Book ...books){
+    public void returnBook(Book...books){
         returnBook(books.length);
         for (Book j : books){
             j.showInfo();
