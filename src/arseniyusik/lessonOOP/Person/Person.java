@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP;
+package arseniyusik.lessonOOP.Person;
 
 public class Person {
     private String fullName;

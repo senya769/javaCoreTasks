@@ -1,5 +1,11 @@
 package arseniyusik.lessonOOP;
 
+import arseniyusik.lessonOOP.Computer.Computer;
+import arseniyusik.lessonOOP.Matrix.Matrix;
+import arseniyusik.lessonOOP.Phone.Phone;
+import arseniyusik.lessonOOP.Person.Person;
+import arseniyusik.lessonOOP.Reader.Reader;
+
 import java.util.Scanner;
 
 public class Main {
@@ -46,7 +52,7 @@ public class Main {
                 array[0].returnBook("Приключение","Каникулы");
                 System.out.println(array[0].getInfo());
 
-                Book [] books = new Book[2];
+                Book[] books = new Book[2];
                 books[0] = new Book("Приключение","Васнецов");
                 books[1] = new Book("Каникулы","Васильев");
                 array[1].takeBook(books);

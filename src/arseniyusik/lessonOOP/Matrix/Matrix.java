@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP;
+package arseniyusik.lessonOOP.Matrix;
 
 import java.util.Random;
 

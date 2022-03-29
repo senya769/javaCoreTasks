@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP;
+package arseniyusik.lessonOOP.Computer;
 
 import java.util.Random;
 import java.util.Scanner;

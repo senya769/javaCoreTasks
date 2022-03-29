@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP;
+package arseniyusik.lessonOOP.Reader;
 
 public class Book {
     private String nameBook;
