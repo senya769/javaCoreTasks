@@ -9,7 +9,7 @@ public class Computer {
     private int HDD;
     private int resource;
     private boolean status = false;
-    private int count = 0;
+    private int count = 1;
 
 Computer(){}
 Computer(int resource){
