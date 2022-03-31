@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP.internetShop;
+package arseniyusik.lessonOOP.InternetShop;
 
 public class Basket {
 private Product []products;

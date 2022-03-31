@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP.internetShop;
+package arseniyusik.lessonOOP.InternetShop;
 
 public  class Product {
     private String name;
