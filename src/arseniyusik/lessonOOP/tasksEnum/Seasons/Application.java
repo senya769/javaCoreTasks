@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP.tasksEnum;
+package arseniyusik.lessonOOP.tasksEnum.Seasons;
 
 public class Application {
 
