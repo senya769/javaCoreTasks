@@ -1,4 +1,4 @@
-package arseniyusik.lessonOOP.tasksEnum;
+package arseniyusik.lessonOOP.tasksEnum.Seasons;
 
 public enum Season {
     WINTER(-5.2),
