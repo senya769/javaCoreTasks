@@ -16,7 +16,7 @@ public class EngineIsOff extends Exception {
         System.out.println("Машина " + this.detail.getBrand() + " не завелась!");
         System.out.println("___________________________________________________");
         System.out.println("Log:\n Марка" + this.detail.getBrand() + "\tЦена = " +
-                this.detail.getPrice() + "\tСкорость = " + this.detail.getSpeed());
+               + this.detail.getPrice() + "\tСкорость = " + this.detail.getSpeed());
         System.out.println("___________________________________________________");
     }
 }
