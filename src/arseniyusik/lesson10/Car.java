@@ -1,5 +1,6 @@
 package arseniyusik.lesson10;
 
+import java.io.PrintStream;
 import java.util.Random;
 
 public class Car {
@@ -16,12 +17,16 @@ public class Car {
         this.price = price;
     }
 
-    public void startEngine() throws EngineIsOff {
+    public String startEngine() throws EngineIsOff {
+        PrintStream stream = new PrintStream(System.out);
+        StringBuilder buf = new StringBuilder();
         int number = new Random().nextInt(20);
         if (number % 2 == 0) {
             throw new EngineIsOff(this);
         } else {
-            System.out.println("Машина " + this.brand + " завелась!");
+            //System.out.println("Машина " + this.brand + " завелась!");
+            buf.append("Машина ").append(this.getBrand()).append(" завелась!");
+                return buf.toString();
         }
     }
 
