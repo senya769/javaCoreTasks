@@ -38,18 +38,19 @@ public class TextFile {
             String line;
             while ((line = bufferRead.readLine()) != null) {
                 String[] words = line.split(space);
-                for (String j : words) { // проверка на палиндром
-                    builder.append(j);
-                    if (j.equals(builder.reverse().toString())) {
-                        writeInFile(outFile, j, spaceBytes);
+                for (String word : words) { // проверка на палиндром
+                    builder.append(word);
+                    if (word.equals(builder.reverse().toString())) {
+                        writeInFile(outFile, word, spaceBytes);
                     }
                     builder.setLength(0);
                 }
             }
         }
     }
-    private void writeInFile(BufferedOutputStream out, String j, byte[] spaceByte) throws IOException {
-        out.write(j.getBytes());
+
+    private void writeInFile(BufferedOutputStream out, String word, byte[] spaceByte) throws IOException {
+        out.write(word.getBytes());
         out.write(spaceByte);
     }
 }
