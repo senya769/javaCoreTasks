@@ -1,4 +1,4 @@
-package arseniyusik.lesson11.palindromeTask2;
+package arseniyusik.lesson11.task2_palindromes;
 
 public class TextEditor {
 

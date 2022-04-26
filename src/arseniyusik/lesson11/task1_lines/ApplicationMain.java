@@ -1,4 +1,4 @@
-package arseniyusik.lesson11.palindromeTask1;
+package arseniyusik.lesson11.task1_lines;
 
 import java.io.*;
 
