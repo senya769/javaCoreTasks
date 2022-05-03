@@ -4,7 +4,7 @@ import java.io.*;
 
 public class ApplicationMain {
     public static void main(String[] args)  {
-        String dir = "D:\\учеба\\teachmeskills\\javaCoreTasks\\src\\arseniyusik\\lesson11\\palindromeTask1\\";
+        String dir = "D:\\учеба\\teachmeskills\\javaCoreTasks\\src\\arseniyusik\\lesson11\\task1_lines\\";
         String file = "text.txt";
         String newFile = "palindromes.txt";
         dir += newFile;
