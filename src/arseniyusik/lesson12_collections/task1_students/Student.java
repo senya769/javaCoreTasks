@@ -2,7 +2,7 @@ package arseniyusik.lesson12_collections.task1_students;
 
 import java.util.Objects;
 
-public class Student implements Comparable<Student>{
+ class Student implements Comparable<Student>{
     private static int count = 20600;
     private int id = ++count;
     private int course;
