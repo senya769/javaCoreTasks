@@ -4,20 +4,21 @@ import java.io.*;
 import java.util.Arrays;
 
 public class SaveAsThread implements Runnable{
-   private final File file;
+
    int []arr;
-    public SaveAsThread(File file,int[] mas){
+
+    public SaveAsThread(int [] mas){
       this.arr = mas;
-      this.file =file;
     }
     @Override
-    public void run() {
-        try {BufferedWriter writer = new BufferedWriter(new FileWriter("arrayThreads.txt"));
-           writer.write("1");
-
+    public  void run() {
+        try (        FileWriter  file = new FileWriter("arrayThreads.txt",true)){
+            synchronized (this){
+            file.write(Arrays.toString(arr)+"\n");
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(Thread.currentThread().getName()+"Thread finished");
+        System.out.println(Thread.currentThread().getName()+" finished");
     }
 }
