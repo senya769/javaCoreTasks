@@ -8,7 +8,6 @@ import java.util.Random;
 public class Application {
     public static void main(String[] args) throws InterruptedException, IOException {
         File file = new File("arrayThreads.txt");
-        FileWriter fileb = new FileWriter(file.getName());
         int[] arr1 = new int[5];
         int[] arr2 = new int[5];
         int[] arr3 = new int[5];
